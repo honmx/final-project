@@ -1,16 +1,11 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { ethers } from "ethers";
 import { getContract } from "~~/helpers/getContract";
 import CreateElection from "~~/components/CreateElection";
 import VoteElection from "~~/components/VoteElection";
 import ElectionResults from "~~/components/ElectionResults";
 
-// Component for fetching and displaying election results
-
-
-// Main Component for the Home page
 export default function Home() {
   const [elections, setElections] = useState<any[]>([]);
 
